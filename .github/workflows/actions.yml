@@ -14,6 +14,7 @@ jobs:
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
           env
+          echo "${{ github.token }}"
       - name: Checkout
         uses: actions/checkout@v2
       - name: List Files
