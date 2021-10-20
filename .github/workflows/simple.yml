@@ -16,6 +16,7 @@ jobs:
           which npm
       - name: python Command
         run: |
-          Date.now();
-          console.log({a: 1, b: 2, c: [...[1,2,3]]})
-        shell: node
+          import platform
+          print
+          (platform.processor())
+        shell: python
